@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ArticlesComponent } from './articles/articles.component';
@@ -10,7 +11,8 @@ import { ArticlesComponent } from './articles/articles.component';
     ArticlesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+	HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

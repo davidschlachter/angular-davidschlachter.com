@@ -1,2 +1,10 @@
-<h2>{{article.title}}</h2>
-<img src="{{article.thumbnail_url}}">
+<h2>Articles</h2>
+<div id="articles-table">
+  <article *ngFor="let article of articles">
+    <a href="{{article.url}}"><img src="https://www.davidschlachter.com/{{article.thumbnail_url}}" alt="{{article.thumbnail_alt}}"></a>
+    <div class="article-description">
+      <h1><a href="{{article.url}}">{{article.title}}</a></h1>
+      <p>{{article.date}}<br>{{article.summary}}</p>
+    </div>
+  </article>
+</div>
