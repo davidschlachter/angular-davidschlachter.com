@@ -1,0 +1,9 @@
+p {
+  line-height: 160%;
+  text-indent: 2em;
+  font-size: 90%;
+}
+
+p:first-of-type {
+    text-indent: 0;
+}
