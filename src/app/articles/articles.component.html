@@ -2,7 +2,7 @@
 <div id="articles-table">
   <article *ngFor="let article of articles">
     <a href="{{article.url}}">
-      <div class="article-image">
+      <div class="article-image" [ngStyle]="articleColor()">
         <img src="https://www.davidschlachter.com/{{article.thumbnail_url}}" alt="{{article.thumbnail_alt}}" loading="lazy">
       </div>
     </a>
